@@ -3,7 +3,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 # Load model
-import joblib
 model = joblib.load("best_model.pkl")
 
 
