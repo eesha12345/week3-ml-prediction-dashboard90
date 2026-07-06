@@ -1,11 +1,10 @@
 
 import streamlit as st
 import pandas as pd
-
+import joblib
 # Load model
-import pickle
-with open("best_model.pkl", "rb") as f:
-    model = pickle.load(f)
+import joblib
+model = joblib.load("best_model.pkl")
 
 
 st.set_page_config(page_title="Student Performance Prediction", layout="centered")
