@@ -1,6 +1,11 @@
 
 import streamlit as st
 import pandas as pd
+import joblib
+import os
+
+MODEL_PATH = os.path.join("models", "best_model.pkl")
+model = joblib.load(MODEL_PATH)
 # Load model
 model = joblib.load("best_model.pkl")
 
