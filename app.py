@@ -5,7 +5,7 @@ import joblib
 import os
 
 # Load the trained model
-MODEL_PATH = os.path.join("models", "best_model.pkl")
+MODEL_PATH = "best_model.pkl"
 model = joblib.load(MODEL_PATH)
 
 st.set_page_config(
